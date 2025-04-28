@@ -9,8 +9,8 @@ function TodoList() {
 
   return (
     <div className="mt-4">
-      <div>
-        <button onClick={() => setFilter('all')} className="mr-2">All</button>
+      <div className='bg-blue-500 text-white px-4 py-2 rounded mb-2 gap-x-2 flex justify-center'>
+        <button onClick={() => setFilter('all')} className="mr-2 ">All</button>
         <button onClick={() => setFilter('completed')} className="mr-2">Completed</button>
         <button onClick={() => setFilter('pending')}>Pending</button>
       </div>
@@ -34,7 +34,7 @@ function TodoList() {
             </span>
           )}
           <button
-            className="ml-2 text-red-500"
+            className="ml-2 text-red-500 bg-black hover:bg-red-700 text-white font-bold py-1 px-2 rounded"
             onClick={() => deleteTodo(index)}
           >
             Delete
